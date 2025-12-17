@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taha Zafar — Mechanical Design Engineer</title>
+<style>
+  :root{--accent:#4B352A;--bg:#F9F8F6;--muted:#6b7280;--card:#ffffff}
+  *{box-sizing:border-box}
+  body{font-family:Inter,Segoe UI,Roboto,Arial; margin:0; background:var(--bg); color:#0f1724; line-height:1.45}
+  header{background:#C9B59C; padding:42px 20px}
+  .container{max-width:980px;margin:0 auto}
+  .hero{display:flex;gap:20px;align-items:center;justify-content:space-between}
+  .hero-left{max-width:640px}
+  h1{margin:0;font-size:32px;letter-spacing:-0.5px}
+  p.lead{color:var(--accent);margin-top:12px}
+  .ctas{margin-top:18px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+  .btn-primary{background:var(--accent);color:white}
+  .btn-outline{border:1px solid rgba(15,23,36,0.08);background:white;color:var(--accent)}
+  nav{display:flex;gap:12px;align-items:center;justify-content:center;padding:14px 0}
+  nav a{color:var(--muted);text-decoration:none;font-weight:600}
+  section{padding:40px 20px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,20,0.04)}
+  .skills{display:flex;flex-wrap:wrap;gap:10px}
+  .skill{background:#f3f6fb;padding:8px 12px;border-radius:999px;font-weight:600;color:#0f1724}
+  .project-media{height:200px;background:#eef3ff;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  .project-title{font-weight:700;margin:8px 0}
+  footer{padding:30px 20px;text-align:center;color:var(--muted);font-size:14px}
+  @media(max-width:800px){
+    .grid{grid-template-columns:1fr}
+    .hero{flex-direction:column;align-items:flex-start}
+  }
+ .card,
+   .project-card {
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+   }
+
+ .card::before,
+ .project-card::before {
+   content: "";
+   position: absolute;
+   inset: -6px;
+   
+    opacity: 0;
+    transition: opacity 0.3s ease;
+   border-radius: inherit;
+   z-index: -1;
+  }
+
+ .card:hover,
+ .project-card:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 18px 40px rgba(51, 50, 50, 0.621);
+   background: Linear-gradient(
+    45deg,
+    #D9CFC7,
+    #EFE9E3,
+    transparent 95%
+   );
+  }
+
+ .card:hover::before,
+ .project-card:hover::before {
+  opacity: 1;
+ }
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <strong style="font-size:18px">Taha Zafar</strong><br>
+        <small style="color:var(--accent)">Mechanical Design Engineer — Indore, Madhya Pradesh, India</small>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="btn btn-outline" href="./Taha_Zafar_Resume.pdf" download>Download Resume (PPT)</a>
+        <a class="btn btn-primary" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero" style="margin-top:22px">
+      <div class="hero-left">
+        <h1>Taha Zafar — Mechanical design, prototyping & agricultural robotics</h1>
+        <p class="lead">I design robust mechanical systems and agricultural robots — from concept sketches and CAD to FEA, prototyping and field testing. I work with SolidWorks, Ansys, Jetson integration for embedded control systems, and I file patents for novel mechanisms.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#skills">Skills & Tools</a>
+        </div>
+      </div>
+      <div style="max-width:260px;text-align:center">
+        <div style="width:220px;height:220px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(12,15,20,0.06)">
+          <div style="font-size:14px;color:var(--muted)">[Add your portrait or CAD render here]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="container">
+  <a href="#skills">Skills</a> · <a href="#projects">Projects</a> · <a href="#experience">Experience</a> · <a href="#education">Education</a> 
+</nav>
+
+<section id="about">
+  <div class="container">
+    <div class="card">
+      <h2>About</h2>
+      <p>Mechanical design engineer focused on agricultural robotics, vehicle-mounted systems, and product design. Experience in designing an autonomous mobility robot for weed removal (patent in process), vehicle-mounted electronics enclosures, and a diesel-engine powered power tiller design. Comfortable across CAD, FEA, prototyping and collaborating with manufacturing partners.</p>
+      <ul>
+        <li><strong>Location:</strong> Indore, Madhya Pradesh, India</li>
+        <li><strong>Email:</strong> zafartahatz@gmail.com</li>
+        <li><strong>Phone:</strong> 7746878672</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Design & CAD</h3>
+        <div class="skills">
+          <div class="skill">SolidWorks</div>
+          <div class="skill">CATIA</div>
+          <div class="skill">Fusion 360</div>
+          <div class="skill">CAD Assemblies</div>
+        </div>
+        <p style="color:var(--muted);margin-top:10px">Mechanical design, assemblies, tolerance stacks and DFMA.</p>
+      </div>
+      <div class="card">
+        <h3>Prototyping & Manufacturing</h3>
+         <div class="skills">
+          <div class="skill">3D Printing</div>
+          <div class="skill">CNC</div>
+          <div class="skill">Sheet Metal</div>
+         </div>
+         <p style="color:var(--muted);margin-top:10px">Prototype fabrication, vendor collaboration, and material selection.</p>
+      </div>
+      <div class="card">
+        <h3>Embedded & Control</h3>
+        <div class="skills">
+          <div class="skill">ROS / Python</div>
+          <div class="skill">Jetson (Xavier)</div>
+          <div class="skill">Motor Drivers</div>
+        </div>
+        <p style="color:var(--muted);margin-top:10px">Integration of controllers, sensors and actuators for mobile robots.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <div class="project-title">Autonomous Mobility Robot for Weed Removal</div>
+        <p><strong>Role:</strong> Lead mechanical designer. <strong>Key contributions:</strong> concept to prototype, mechanical actuators, chassis design, integration for camera and LiDAR, and patent drafting.</p>
+        <details>
+          <summary>Read more</summary>
+          <ul>
+            <li>Objective: Autonomous weeding with minimal crop damage.</li>
+            <li>Design: Chassis, actuation modules, 48V power system, integrated cooling for laser module.</li>
+            <li>Tools: SolidWorks, FEA, ROS integration.</li>
+            <li>Outcome: Prototype tested in field; patent draft prepared for "Autonomous Mobility Robot for Weed Removal in Farmlands".</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="card">
+        <div class="project-title">200cc Diesel Engine Powered Power Tiller (Freelance)</div>
+        <p><strong>Role:</strong> Mechanical designer — transmission, powertrain layout and assembly packaging.</p>
+        <details>
+          <summary>Read more</summary>
+          <ul>
+            <li>Objective: Design a rugged tiller for agricultural use with optimized power delivery.</li>
+            <li>Design: Gearbox, clutch assembly, frame mounting and ergonomics.</li>
+            <li>Outcome: Detailed CAD package and manufacturing drawings delivered.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Vehicle-mounted Electronics Box</div>
+        <p>Designed enclosure to house motor drivers, power supplies and controller PCBs with thermal considerations and mounting for Lunyee LY13-LD01 hub motors.</p>
+        <details>
+          <summary>Read more</summary>
+          <ul>
+            <li>Components: 4 BLDC motor drivers, 48V supply, Jetson Xavier, stepper driver.</li>
+            <li>Design decisions: cooling, modular layout, serviceability.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="card">
+       <div class="project-title">
+        Autonomous Mobility Robot for Industrial Load Carrying
+       </div>
+       <p>
+       <strong>Focus:</strong> Industrial autonomous mobile robot (AMR) design with high payload capacity.
+       </p>
+       <details>
+         <summary>Read more</summary>
+         <ul>
+           <li>Designed a 4-wheel-drive autonomous mobile robot with skid steering using hub wheel drives.</li>
+           <li>Engineered the chassis and frame structure for a load carrying capacity of <strong>300–500 kg</strong>.</li>
+           <li>Focused on load distribution, stability, drivetrain layout, and maneuverability for industrial environments.</li>
+         </ul>
+       </details>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Mechanical Design Engineer — Projects & Freelance</h3>
+      <p style="color:var(--muted)">Key responsibilities and achievements:</p>
+      <ul>
+        <li>Led mechanical design for agricultural robots and vehicle-mounted systems.</li>
+        <li>Created CAD models, assembly drawings and BOMs for manufacturing.</li>
+        <li>Performed FEA for structural components and iterative optimization.</li>
+        <li>Coordinated with vendors for prototyping and pilot production.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2>Education & Certifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Certifications</h3>
+        <ul>
+          <li>Mechatronics — NPTEL (certificate)</li>
+          <li>Diploma in Digital Photography</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+         <ul>
+           <li>
+           <strong>Bachelor of Technology (B.Tech) — Mechanical Engineering</strong><br>
+            Specialization: Industrial & Production Engineering<br>
+            Medi-Caps University, Indore, Madhya Pradesh
+           </li>
+          </ul>
+     </div>
+
+        
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>If you want to collaborate or discuss a project, reach out:</p>
+      <ul>
+        <li><strong>Email:</strong> zafartahatz@gmail.com</li>
+        <li><strong>Phone:</strong> 7746878672</li>
+        <li><strong>Location:</strong> Indore, Madhya Pradesh, India</li>
+      </ul> 
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2025 Taha Zafar — Mechanical Design Engineer ·</div>
+</footer>
+</body>
+</html>
